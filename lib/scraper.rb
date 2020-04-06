@@ -10,7 +10,7 @@ class Scraper
     doc = Nokogiri::HTML(html).css(".student-card")
     students = []
     doc.each do |hash|
-      student
+      student = {}
       name = hash.css(".card-text-container h4").text
       location = hash.css(".card-text-container p").text
       profile_url = hash.css(".student-card a")[0]["href"]
