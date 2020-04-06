@@ -13,7 +13,7 @@ class Scraper
       student = {}
       name = hash.css(".card-text-container h4").text
       location = hash.css(".card-text-container p").text
-      profile_url = hash.css(".student-card a")[0]["href"]
+      profile_url = hash.css("a")[0]["href"]
       student[:name] = name
       student[:location] = location
       student[:profile_url] = profile_url
