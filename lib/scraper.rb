@@ -30,7 +30,7 @@ class Scraper
     bio = doc.css("div details-container.description-holder p").text
 
     social.each {|el|
-    if el[0]["href"].include?("twitter")
+    if el["href"].include?("twitter")
       twitter = el[0]["href"]
     elsif el[0]["href"].include?("linkedin")
       linkedin = el[0]["href"]
@@ -40,8 +40,6 @@ class Scraper
       blog = el[0]["href"]
     end
     }
-
-    binding.pry
 
     student = {}
     student[:twitter] = twitter if twitter
