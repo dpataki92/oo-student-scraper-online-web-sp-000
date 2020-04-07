@@ -49,6 +49,7 @@ class Scraper
     student[:profile_quote] = profile_quote if profile_quote
     student[:bio] = bio if bio
     student
+    binding.pry
   end
 
 end
