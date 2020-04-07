@@ -26,8 +26,8 @@ class Scraper
     linkedin = nil
     github = nil
     blog = nil
-    profile_quote = doc.css(".vitals-text-container.profile-quote").text
-    bio = doc.css("div details-container.description-holder p").text
+    profile_quote = doc.css(".vitals-text-container .profile-quote").text
+    bio = doc.css(".details-container .description-holder p").text
 
     social.each {|el|
     if el["href"].include?("twitter")
