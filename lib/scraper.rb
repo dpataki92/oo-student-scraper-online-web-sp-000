@@ -44,7 +44,7 @@ class Scraper
     student = {}
     student[:twitter] = twitter if twitter
     student[:linkedin] = linkedin if linkedin
-    student[:github] = github if guthub
+    student[:github] = github if github
     student[:blog] = blog if blog
     student[:profile_quote] = profile_quote if profile_quote
     student[:bio] = bio if bio
