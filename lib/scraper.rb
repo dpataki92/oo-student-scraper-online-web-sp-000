@@ -31,13 +31,13 @@ class Scraper
 
     social.each {|el|
     if el["href"].include?("twitter")
-      twitter = el[0]["href"]
-    elsif el[0]["href"].include?("linkedin")
-      linkedin = el[0]["href"]
-    elsif el[0]["href"].include?("github")
-      github = el[0]["href"]
+      twitter = el["href"]
+    elsif el["href"].include?("linkedin")
+      linkedin = el["href"]
+    elsif el["href"].include?("github")
+      github = el["href"]
     else
-      blog = el[0]["href"]
+      blog = el["href"]
     end
     }
 
