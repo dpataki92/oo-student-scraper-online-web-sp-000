@@ -42,7 +42,7 @@ class Scraper
     }
 
     binding.pry
-    
+
     student = {}
     student[:twitter] = twitter if twitter
     student[:linkedin] = linkedin if linkedin
@@ -51,7 +51,7 @@ class Scraper
     student[:profile_quote] = profile_quote if profile_quote
     student[:bio] = bio if bio
     student
-    
+
   end
 
 end
